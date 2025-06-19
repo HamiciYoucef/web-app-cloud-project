@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu à Onglets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <img class="his-logo" src="https://his.edu.dz/storage/2023/11/group-6.png" alt="HIS Logo">
+    <h1 class="header-title">
+      <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" width="30" style="vertical-align: middle; margin-right: 10px;">
+      Voici Mon Projet de Cloud
+    </h1>
+    <button id="darkModeToggle">🌙 Mode Sombre</button>
+  </div>
+</header>
+
+
+<div class="main-container">
+  <div class="tabs">
+    <button onclick="openTab('tab1')" class="active-tab">Tab-1</button>
+    <button onclick="openTab('tab2')">Tab-2</button>
+    <button onclick="openTab('tab3')">Tab-3</button>
+    <button onclick="openTab('tab4')">Tab-4</button>
+  </div>
+
+  <div class="tab-content-container">
+    <div id="tab1" class="tab-content">
+      <ul>
+        <li><button onclick="simulateAPI('Item 1.1')" class="active-tab">Item 1.1</button></li>
+        <li><button onclick="simulateAPI('Item 1.2')" class="active-tab">Item 1.2</button></li>
+        <li><button onclick="simulateAPI('Item 1.3')" class="active-tab">Item 1.3</button></li>
+      </ul>
+    </div>
+
+    <div id="tab2" class="tab-content" style="display:none;">
+      <ul>
+        <li><button onclick="simulateAPI('Item 2.1')" class="active-tab">Item 2.1</button></li>
+        <li><button onclick="simulateAPI('Item 2.2')" class="active-tab">Item 2.2</button></li>
+        <li><button onclick="simulateAPI('Item 2.3')" class="active-tab">Item 2.3</button></li>
+      </ul>
+    </div>
+
+    <div id="tab3" class="tab-content" style="display:none;">
+      <ul>
+        <li><button onclick="simulateAPI('Item 3.1')">Item 3.1</button></li>
+        <li><button onclick="simulateAPI('Item 3.2')">Item 3.2</button></li>
+        <li><button onclick="simulateAPI('Item 3.3')">Item 3.3</button></li>
+      </ul>
+    </div>
+
+    <div id="tab4" class="tab-content" style="display:none;">
+      <ul>
+        <li><button onclick="simulateAPI('Item 4.1')">Item 4.1</button></li>
+        <li><button onclick="simulateAPI('Item 4.2')">Item 4.2</button></li>
+        <li><button onclick="simulateAPI('Item 4.3')">Item 4.3</button></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="status-bar">Status : Aucun appel</div>
+<div id="spinner" style="display:none; text-align:center;">
+  <img src="https://i.imgur.com/llF5iyg.gif" width="40" alt="Chargement...">
+</div>
+<div id="toast" class="toast">Appel REST simulé...</div>
+
+<script src="script.js"></script>
+</body>
+</html>
