@@ -1,0 +1,7 @@
+services:
+  web:
+    image: splinter168/cloud-project
+
+    ports:
+      - "80:80"
+    container_name: web-app
