@@ -22,7 +22,7 @@ static web application served using Apache HTTP Server in Docker.
 
 
 Download the `docker-compose.yml` file directly from the repository:
-[Download docker-compose.yml](https://github.com/YAZZYD/static-webapp-on-docker/blob/master/docker-compose.yml)
+[Download docker-compose.yml](https://github.com/HamiciYoucef/web-app-cloud-project/blob/main/docker-compose.yaml)
 
 ```
 cd \path\to\docker-compose-file
