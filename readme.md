@@ -26,8 +26,8 @@ Download the `docker-compose.yml` file directly from the repository:
 
 ```
 cd \path\to\docker-compose-file
-docker pull yazzyd/static-web-app
-docker compose up -d image
+docker pull splinter168/cloud-project
+docker compose up -d
 ```
 
 Then open: [http://localhost](http://localhost)
