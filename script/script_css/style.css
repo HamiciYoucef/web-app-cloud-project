@@ -6,11 +6,6 @@ body {
   transition: background-color 0.5s, color 0.5s;
 }
 
-body.dark-mode {
-  background: #2c3e50;
-  color: #ecf0f1;
-}
-
 header {
   background-color: #00a1c1;
   color: white;
@@ -37,15 +32,6 @@ header {
   text-align: center;
   margin-left: -200px;
   font-size: 24px;
-}
-
-#darkModeToggle {
-  background: #111;
-  color: #fff;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
 #searchInput {
